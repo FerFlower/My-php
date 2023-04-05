@@ -1,7 +1,7 @@
 <html lang="es">
 <?php
 
-$Nombre = "Diego Fernando";
+$Nombre = "diego Fernando";
 $Apellido = "Quispe Apaza" ;
 $edad = 18;
 $Centro_de_estudio = "Senati";

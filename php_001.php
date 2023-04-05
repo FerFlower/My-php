@@ -1,6 +1,6 @@
 <html lang="es">
 <?php 
-$Deuda = 240; 
+$Deuda = 230; 
 $Interes; 
 echo "<p> ________________ Mi BANCO _______________</p>";
 
