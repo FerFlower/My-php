@@ -1,6 +1,8 @@
+<html lang="es">
 <?php 
 $Deuda = 240; 
 $Interes; 
+echo "<p> ________________ Mi BANCO _______________</p>";
 
 if ($Deuda <= 100) { 
     $Interes = 15; 
@@ -12,5 +14,5 @@ if ($Deuda <= 100) {
     $Interes= 25;
 }
 $total = $Deuda + ($Deuda * ($Interes/100)); 
-echo "Tu deuda es de s/.".$Deuda." + ".$Interes."% deberas de pagar un total de ". $total . " soles";
+echo "Tu deuda es de clienete ----> s/.".$Deuda."<br>Interes de aumento --->".$Interes."% <br>Monto a pagar ---->s/.". $total ;
 ?>
