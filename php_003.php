@@ -12,8 +12,7 @@
         <label for="txt">La cantidad de numeros consecutibos que euieres sumar : </label>
         <input type="text" name="minumero" /><br/>
         </p>
-
-        <input type="submit" value="Ver deuda"/>
+      <input type="submit" value="Ver deuda"/>
 
     </form>
 </body>
