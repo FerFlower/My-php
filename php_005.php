@@ -1,7 +1,7 @@
 <?php
 if ($_POST) {
-    $Nombre = $_POST('txt_Nombre');
-    $Gmail = $_POST('txt_gmail');
+    $Nombre = $_POST['txt_Nombre'];
+    $Gmail = $_POST['txt_gmail'];
 
     echo "Mi nombre es :" . $Nombre . "Gmail : " . $Gmail;
 }
