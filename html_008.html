@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hola.css">
+    <title>Mi calculadora</title>
+</head>
+<body>
+    <p>Ingresa tus dos numeros</p>
+    <form action="php_008.php" method="get"> 
+        <label>1° Numero</label> 
+        <input type="text" name="1" /> 
+        <br> <br>
+        <label>2° Numero</label> 
+        <input type="text" name="2" /> 
+        <br>  <br>
+        <label>Operador  </label>
+        <!--
+        <input list="ope"name="3">
+        <datalist id="ope">
+            <option value="Sumar" />
+            <option value="Multiplicar" />
+            <option value="Dibidir" />
+            <option value="Restar" />
+        </datalist>
+-->
+        <input class ="lo" type="radio" name="3" value="Sumar"> Sumar
+        <input class ="lo" type="radio" name="3" value="Multiplicar">Multi
+        <input class ="lo" type="radio" name="3" value="Dibidir">Dividir
+        <input class ="lo" type="radio" name="3" value="Restar">Restar
+ 
+
+        <br>  <br>
+        <input type="submit" value="Ver resusultado" class="buton" />  
+      </form>
+      
+</body>
+</html>
