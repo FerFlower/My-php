@@ -23,11 +23,15 @@ input{
     box-shadow: 2px 2px 10px black;
     color: rgb(220, 231, 171);
     background-color: rgb(0, 159, 252);
-    
+    margin-top: 10px;
+    margin-left: 160px;
 }    
 body{
     background-color: rgba(211, 183, 183, 0.493);
-padding: 15%;
+/*padding: 15%;*/
+margin-top: 10%; /* Mueve el cuerpo 50px hacia abajo */
+margin-left: 40%; /* Mueve el cuerpo 20px hacia la derecha */
+
 
 }
 

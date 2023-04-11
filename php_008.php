@@ -1,6 +1,6 @@
 
-<link rel="stylesheet" href="hola.css">
-<?php  
+    <link rel="stylesheet" href="hola.css">
+    <?php  
 
 if($_GET){
     $gmail ="@gmail.com";
