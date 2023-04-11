@@ -7,7 +7,12 @@ if($_POST){
     $Numero2=$_POST['2'];
     $Numero3=$_POST['3'];
 
-    echo "Tu primer numero es : ".$Numero1."Tu segundo numero es : ".$Numero2."Tu terser numero es : ".$Numero3
+    //echo "Tu primer numero es : ".$Numero1."Tu segundo numero es : ".$Numero2."Tu terser numero es : ".$Numero3;
 
+if($Numero1 == 12 == $Numero2 == $Numero3){
+echo "Te salbastes y aprobestes apenas"
 }
-/>
+
+    
+}
+?>
