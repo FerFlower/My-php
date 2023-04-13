@@ -5,16 +5,15 @@ label{color: rgb(221, 221, 221);
 }
 @font-face {
     font-family: "ho";
-    src: url("Milans.otf");
+    src: url("Milo.ttf");
 }
 p{
-    font-family: "ho";
+    
     color: rgb(247, 247, 247);
-    height: 1%;
-    font-size: 2em;
+    height: 2%;
+    font-size: 1.7em;
     padding: 20px 70px;
     border-radius: 10px;
-   
 }
 input{
     font-size: 1.2em;
@@ -39,21 +38,25 @@ margin-top: 10%; /* Mueve el cuerpo 50px hacia abajo */
 margin-left: 40%; /* Mueve el cuerpo 20px hacia la derecha */
 background-image: linear-gradient(
     0deg,
-     rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
-    ,url("fotito.jpg");
+     rgba(255, 255, 255, 0.548),rgba(3, 3, 3, 0.432)) 
+    ,url("rote.jpg");
+   
     background-repeat: no-repeat;
-    background-size: 100% 238%;
+    background-size: 101% 100%;
 }
 
 h3{
-    color: rgb(4, 4, 92);
+    font-family: "ho";
+    color: rgb(240, 240, 243);
     font-size:0.9em;
 
 }
-h2{color: rgb(92, 17, 4);
-    font-size:1.2em;
+h2{color: rgb(245, 245, 245);
+    font-size:1.6em;
     padding: 10px 100px;
-
+    font-family: "ho";
+    margin-top: 20px;
+    margin-left: -100px;
 }
 .lo{
     color: rgba(255, 255, 255, 0.589);
