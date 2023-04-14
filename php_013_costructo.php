@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="diseño_php.css">
+<link rel="stylesheet" href="css/diseño_php.css">
 
 <?php 
 
