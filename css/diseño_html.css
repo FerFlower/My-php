@@ -9,11 +9,11 @@ label{color: rgb(221, 221, 221);
 }
 @font-face {
     font-family: "2";
-    src: url("/doc/Natures.ttf");
+    src: url("doc/Natures.ttf");
 }
 @font-face {
     font-family: "3";
-    src: url("/doc/NoisyWalk.ttf");
+    src: url("doc/NoisyWalk.ttf");
 }
 p{
     font-family: "3";
@@ -50,7 +50,7 @@ margin-left: 40%; /* Mueve el cuerpo 20px hacia la derecha */
 background-image: linear-gradient(
     0deg,
      rgba(255, 255, 255, 0.384),rgba(3, 3, 3, 0.541)) 
-    ,url("/img/rote.jpg");
+    ,url("img/rote.jpg");
    
     background-repeat: no-repeat;
     background-size: 101% 100%;

@@ -1,5 +1,5 @@
 
-
+<link rel="stylesheet" href="css/diseño_php.css">
 <?php 
 class Datos {
     private $Nombre;
@@ -88,13 +88,19 @@ return $this->Participacion;
 
 
 
-    echo "<h2>Tu nombre es :".$this->get_Nombre()."<br><br>Tu Apellido es :  ".$this->get_Apellido()."<br><br>Tu Id es :  ". $this->get_ID()."<br></h2>";
-    echo "Nota de abilidad 1 :".$this->get_Abilidad1()."<br>Nota de abilidad 2 :".$this->get_Abilidad2()."<br>Nota de abilidad 3 :".$this->get_Abilidad3()."<br>Nota de abilidad 4 :".$this->get_Abilidad4();
-    echo "<br>Nota de examen final : ".$this->get_Examen_final()."<br>Nota de trabajo proyecto :".$this->get_Travajo_proyeco()."<br>Trabajo de participacion :". $this->get_Participacion();
+    echo "<h3>Alumno : ".$this->get_Nombre()." ".$this->get_Apellido()."<br>Tu Id es :  ". $this->get_ID()."<br><";
+    echo "*************************************************************************************************************<br>";
+    echo "Nota de Habilidades Unidad N° 01 :".$this->get_Abilidad1()."<br>Nota de Habilidades Unidad N° 02 :".$this->get_Abilidad2()."<br>Nota de Habilidades Unidad N° 03 :".$this->get_Abilidad3()."<br>Nota de Habilidades Unidad N° 04 :".$this->get_Abilidad4().
+         "<br>************************************************************************************************************<br>".
+         "Promedo de Notas de Habilidades :".$this->Neto_abilidad()."<br>************************************************************************************************************<br>";
+    
+    echo"Nota de examen final : ".$this->get_Examen_final()."<br>************************************************************************************************************<br>"."Nota de trabajo proyecto :".$this->get_Travajo_proyeco()."<br>************************************************************************************************************<br>"."Trabajo de participacion :". $this->get_Participacion()."<br>************************************************************************************************************<br>";
     $Promedio_Final = $por_Abilidad+$por_Examen+$por_Travajo+$por_participacion;
-    echo "<h2>Tu Promedio final es de -->" .$Promedio_Final."<br></h2>";
-        //echo $this->Neto_abilidad()." -".$por_Examen."-".$por_Travajo." -".$por_participacion;
-} 
+   // echo "<h2>Tu Promedio final es de -->" .$Promedio_Final."<br></h2>";
+   //echo $this->Neto_abilidad()." -".$por_Examen."-".$por_Travajo." -".$por_participacion;
+ echo "<br>Porsentage de Nota: <br><br> Nota de Habilidades % 50 : <br>".$por_Abilidad." Puntos<br><br> Nota de Examen Final % 15 :<br>".$por_Examen." Puntos <br><br>Nota de Trabajo % 15 : <br> ".$por_Travajo." Puntos <br><br>Nota de Participacion % 20 : <br> ".$por_participacion." Puntos <br>"."<br>************************************************************************************************************<br>";
+ echo "Tu Promedio final : " .$Promedio_Final."<br>************************************************************************************************************<br>";
+}
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         $Abilidad1=20;
