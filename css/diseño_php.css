@@ -60,6 +60,8 @@ h3{
     font-family: "1";
     color: rgb(189, 200, 255);
     font-size:1.5em;
+    margin-top: 2px;
+    margin-left: -50%;
 
 }
 input{
