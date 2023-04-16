@@ -1,6 +1,9 @@
 <?php
 if($_POST){
 $Numero1= $_POST['1'];
+$Numero2= $_POST['2'];
+$Numero3= $_POST['3'];
+$Numero4= $_POST['4'];
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
@@ -12,21 +15,19 @@ try {
     
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conexion->exec("SET CHARACTER SET utf8");
-    $sql= "SELECT Id_Productos ,Nom_Productos ,Des_Productos ,Pre_Productos ,Cas_Productos FROM productos where Id_Productos=?";
+    $sql= "INSERT INTO productos (
+        Nom_Productos ,
+        Des_Productos ,
+        Pre_Productos ,
+        Cas_Productos 
+        )VALUES (:01i,:02i,:03i,:04i)";
    
    $Resultado = $conexion->prepare($sql);
-   $Resultado->execute(array($Numero1));
+   $Resultado->execute(array(":01i"=>$Numero1,":02i"=>$Numero2,":03i"=>$Numero3,":04i"=>$Numero4));
 
-    while($registro=$Resultado->fetch(pdo::FETCH_ASSOC)){
-        echo "<br><br><br>Id    : ".$registro['Id_Productos'].
-        "<br> Nombre Productos : ".$registro['Nom_Productos'].
-        "<br> Descripcion producto : ".$registro['Des_Productos'].
-        "<br> Precio Productos : ".$registro['Pre_Productos'].
-        "<br> Cantidad Productos : ".$registro['Cas_Productos']."<br><br>
-        ";
-     }
+   echo "Regisro embiado";
     $Resultado->closeCursor();
-    echo "Conexion Establecida";
+    
     
    
     
