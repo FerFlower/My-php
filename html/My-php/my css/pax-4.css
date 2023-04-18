@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin:0;
+    background-color: rgb(30,30,30);
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.514);
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.445);
+}
+
+button:hover{
+    background-color: rgba(104, 2, 10, 0.726);
+}
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+header{
+    background-image: linear-gradient(
+        0deg,
+        #fd7171, rgb(255, 163, 202))
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    color: blueviolet;
+    font-size: 1.6em;
+   
+}
+
+header .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+.FlowFer{
+    color: rgb(228, 21, 21);
+}
+.color-1{
+    color: rgb(11, 11, 223);
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    color: aliceblue;
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,1)) 
+        ,url("flower-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#title h1{
+    color: white;
+}
+
+#title button{
+    font-size: 1.75em;
+}
+#productos{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;
+}
+
+#productos .conteiner{
+   padding: 100px 0px;
+}
+
+#productos h2{
+margin-top: none;
+}
+
+
+#productos .cartas{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.cartas:first-child{
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("rosas.jpg");
+        
+}
+
+.cartas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("clavel.jpg");
+}
+
+.cartas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("girasol.jpeg");
+}
+
+
+#productos-1 .conteiner{
+   padding: 100px 0px;
+}
+
+#productos-1 h2{
+margin-top: none;
+}
+
+
+
+#productos-1 .cartas-1{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+#productos-1{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;}
+
+.cartas-1:first-child{
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Alstroemeria.jpg");
+        
+}
+
+.cartas-1:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Lilium-bulbiferum.jpg");
+}
+
+.cartas-1:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Lilium-candidum.jpg");}
+
+#productos-2 .conteiner{
+   padding: 100px 0px;
+}
+
+#productos-2 h2{
+margin-top: none;
+}
+
+
+#productos-2 .cartas-2{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+#productos-2{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;}
+
+.cartas-2:first-child{
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Margaritas.jpg");
+        
+}
+
+.cartas-2:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Lilium-longiflorum.png");
+}
+
+.cartas-2:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Orquidea.jpg");}
+
+
+#productos-3 .conteiner{
+   padding: 100px 0px;
+}
+
+#productos-3 h2{
+margin-top: none;
+}
+
+
+#productos-3 .cartas-3{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+#productos-3{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;}
+
+.cartas-3:first-child{
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Pensamientos.jpg");
+        
+}
+
+.cartas-3:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Tulipan.jpg");
+}
+
+.cartas-3:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Hortensias.jpg");}
+
+
+#productos-4 .conteiner{
+   padding: 100px 0px;
+}
+
+#productos-4 h2{
+margin-top: none;
+}
+
+
+#productos-4 .cartas-4{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+#productos-4{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;}
+
+.cartas-4:first-child{
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Azalea.jpg");
+        
+}
+
+.cartas-4:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Anturio.png");
+}
+
+.cartas-4:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Caléndula.jpg");}
+
+#productos-5 .conteiner{
+   padding: 100px 0px;
+}
+
+#productos-5 h2{
+margin-top: none;
+}
+
+
+
+#productos-5 .cartas-5{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+#productos-5{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;}
+
+.cartas-5:first-child{
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Crisantemo.jpg");
+        
+}
+
+.cartas-5:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Dalia.jpg");
+}
+
+.cartas-5:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("Flower/Gerbera.jpg");}
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .conteiner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .logo{
+        color: rgb(11, 59, 11);
+        
+        background-image:url("logo.png");
+        background-size: 3em ;
+        background-position-x: 0em;
+        background-repeat: no-repeat;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #title h1{
+
+        font-size: 5em;
+    }
+    #productos .programas{
+        display: flex;
+        justify-content: center;   
+    }
+   
+    #productos h3{
+        margin-top: 0;
+    }
+    #productos h2{
+        font-size: 4em;
+    }
+    
+    #productos-1 .programas{
+        display: flex;
+        justify-content: center;   
+    }
+ 
+    #productos-1 h3{
+        margin-top: 0;
+    }
+    #productos-1 h2{
+        font-size: 4em;
+    }
+    
+
+    #productos-2 .programas{
+        display: flex;
+        justify-content: center;   
+    }
+
+    #productos-2 h3{
+        margin-top: 0;
+    }
+    #productos-2 h2{
+        font-size: 4em;
+    }
+    
+
+    #productos-3 .programas{
+        display: flex;
+        justify-content: center;   
+    }
+    
+    #productos-3 h3{
+        margin-top: 0;
+    }
+    #productos-3 h2{
+        font-size: 4em;
+    }
+
+
+    #productos-4 .programas{
+        display: flex;
+        justify-content: center;   
+    }
+ 
+    #productos-4 h3{
+        margin-top: 0;
+    }
+    #productos-4 h2{
+        font-size: 4em;
+    }
+
+
+    #productos-5 .programas{
+        display: flex;
+        justify-content: center;   
+    }
+  
+    #productos-5 h3{
+        margin-top: 0;
+    }
+    #productos-5 h2{
+        font-size: 4em;
+    }
+}

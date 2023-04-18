@@ -1,0 +1,263 @@
+
+html{
+    height: 100%;
+    width: 100%;
+}
+label{color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+@font-face {
+    font-family: "1";
+    src: url("/doc/Quesha.ttf");
+}
+@font-face {
+    font-family: "2";
+    src: url("doc/Natures.ttf");
+}
+@font-face {
+    font-family: "3";
+    src: url("doc/NoisyWalk.ttf");
+}
+p{
+    font-family: "3";
+    color: rgb(247, 247, 247);
+    height: 2%;
+    font-size: 1.9em;
+    padding: 20px 90px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 360px;
+    
+}
+input{
+    font-size: 1.2em;
+    color: blue;
+}
+.buton {
+    font-family: "1";
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.925);
+    box-shadow: 2px 2px 10px black;
+    color: rgb(228, 228, 228);
+    background-color: rgba(0, 56, 88, 0.541);
+    margin-top: 40px;
+    margin-left: 580px;
+}   
+
+body{
+    display: block;
+    background-color: rgba(211, 183, 183, 0);
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+    0deg,
+     rgba(0, 0, 0, 0.699),rgba(3, 3, 3, 0.151)) 
+    ,url("img/ro.webp");
+    background-attachment: fixed;
+    
+}
+::-webkit-scrollbar{
+display:none;
+}
+h3{
+    font-family: "3";
+    color: rgba(182, 3, 3, 0.555);
+    font-size:1.5em;
+
+}
+input{
+    color: rgb(92, 0, 0);
+    background-color: rgba(53, 0, 0, 0.151);
+    text-align: center;
+    font-family: "1";
+   
+}
+
+
+label{
+    font-family: "2";
+    color: rgb(3, 1, 102);
+    font-size:1em;
+}
+h2{color: rgb(245, 245, 245);
+    font-size:1.6em;
+    padding: 10px 100px;
+    font-family: "3";
+    margin-top: 20px;
+    margin-left: -100px;
+}
+form#lo{
+
+    height: 90px;
+    width: 400px;
+    color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    
+    
+}
+input#ge1,#ge2,#ge3,#ge4{
+    background-image: linear-gradient(0deg,rgba(168, 168, 168, 0.473),rgba(2, 2, 2, 0.219)) ;
+    border-radius: 100px;
+    border: 0px solid rgba(114, 183, 240, 0.925);
+    box-shadow: 2px 2px 10px rgb(255, 255, 255); 
+    
+}
+
+input#ge1{
+    margin-left: 120px; 
+    
+}
+input#ge2{
+    margin-left: 102px;
+}
+input#ge3{
+    margin-left: 40px;
+}
+input#ge4{
+    margin-left: 60px;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+div#Datos{
+    float: left;
+    border-radius: 32px;
+    padding: 1px 20px;
+    width: 350px;
+    height: 170px;
+    background-color: rgba(241, 238, 238, 0.295);
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+    
+}
+div#da{
+    padding:0px 40px;
+    width: 90px;
+    height: 90px;
+    margin-top:35%;
+    margin-left: 390%;
+    border-radius: 32px;
+    background-image: linear-gradient(0deg,rgba(168, 168, 168, 0.473),rgba(2, 2, 2, 0.219)) ; 
+
+}
+h4#logo{
+    font-family: "2";
+    color: rgb(172, 0, 0);
+    font-size:1em;
+    padding: 3px 10px;
+    text-align: center;
+    margin-top: 0px;
+    background-image: linear-gradient(6deg,rgba(202, 210, 252, 0),rgba(255, 255, 255, 0)) ; 
+    border-radius: 20px;
+}
+h4{
+    font-family: "2";
+    color: rgb(172, 0, 0);
+    font-size:1em;
+    padding: 3px 10px;
+    text-align: center;
+    margin-top: 0px;
+    background-image: linear-gradient(6deg,rgba(202, 210, 252, 0.829),rgba(255, 255, 255, 0.322)) ; 
+    border-radius: 20px;
+}
+div#Nota{
+    float: left;
+    border-radius: 32px;
+    padding: 1px 20px;
+    width: 350px;
+    height: 230px;
+    background-color: rgba(241, 238, 238, 0.295);
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+input#id,#no,#n{
+    outline: none;
+    width: 200px;
+    border: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(6deg,rgba(202, 210, 252, 0.829),rgba(255, 255, 255, 0.322)) ;  
+}
+input#n{
+    margin-left: 6px;
+    width: 80px;
+    
+}
+input#id{
+    margin-left: 60px;
+}
+input#no{
+    margin-left: 23px;
+}
+div#notas{
+    float: right;
+    border-radius: 32px;
+    padding: 1px 20px;
+    width: 800px;
+    height: 460px;
+    background-color: rgba(241, 238, 238, 0.295);
+    display: inline-block;
+    margin-top: 2%px;
+    margin-right: 2%;
+    
+    
+}
+div#havilidad{
+    border-radius: 32px;
+    padding: 1px 20px;
+    width: 140px;
+    height: 230px;
+    background-image: linear-gradient(0deg,rgba(168, 168, 168, 0.068),rgba(2, 2, 2, 0.219)) ; 
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 20px;
+    
+    
+}
+h3.sub{
+    font-size:1.2em;
+    color: rgba(185, 184, 255, 0.603);
+}
+div#travajo,#examen,#participacion{
+    border-radius: 32px;
+    background-image: linear-gradient(0deg,rgba(168, 168, 168, 0.068),rgba(2, 2, 2, 0.219)) ; 
+}
+div#travajo{
+
+    padding:0px 40px;
+    width: 160px;
+    height: 90px;
+    margin-top:-176%;
+    margin-left: 160%;
+}
+div#examen{
+    padding:0px 40px;
+    width: 160px;
+    height: 90px;
+    margin-top:30%;
+    margin-left: 160%;
+}
+div#participacion{
+    padding:0px 30px;
+    width: 160px;
+    height: 90px;
+    margin-top:-175%;
+    margin-left: 370%;
+}
+div#todo{
+   
+    width: 1360px;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/diseño_html.css">
+    <title>Mi calculadora</title>
+</head>
+<body><div id="todo">
+    <p>Registro de Notas de Estudiantes</p>
+    <form action="emviar.php" method="post"> 
+        <div id="Datos">
+        <h3>Datos</h3>
+        <label>Id del alumno</label> 
+        <input type="number" name="id" id="id" /> 
+        <br> <br>
+        <label>Nombre del alumno</label> 
+        <input type="text" name="no" id="no"/> 
+        
+        </div >
+        
+        <div id="notas">
+            <h3>Notas</h3>
+
+            <div id="havilidad">
+             <h3 class="sub">Habilidades</h3>   
+            <label>Nota 1</label> 
+            <input type="number" name="h1" id="n" /> 
+            <br> <br>
+            <label>Nota 2</label> 
+            <input type="number" name="h2" id="n" /> 
+            <br> <br>
+            <label>Nota 3</label> 
+            <input type="number" name="h3" id="n" /> 
+            <br> <br>
+            <label>Nota 4</label> 
+            <input type="number" name="h4" id="n" /> 
+            
+            <br> <br> 
+            <div id="travajo">
+                <h3 class="sub">Travajo del curso</h3>
+                <label>Nota </label> 
+            <input type="number" name="pr" id="n" /> 
+            <br> <br>
+            </div> 
+            <div id="examen">
+                <h3 class="sub">Examen del curso</h3>
+                <label>Nota </label> 
+            <input type="number" name="ex" id="n" /> 
+            <br> <br>
+            </div> 
+            <div id="participacion">
+                <h3 class="sub">Participacion</h3>
+                <label>Nota </label> 
+            <input type="number" name="pa" id="n" /> 
+            <br> <br>
+            </div> 
+            <div id="da">
+                <h3 class="sub">Promedio</h3>
+                <h4>??</h4> 
+            
+            <br> <br>
+            </div> 
+            <input type="submit" value="Emviar registro" class="buton" />  
+        </div>
+        
+        </div>
+        <div id="Nota">
+            <h3>Promedio</h3>
+            <label>
+                
+                <ul>50% Habilidades del estudiante <br></ul>
+                <ul>15% Trabajo del estudiante <br></ul>
+                <ul>15% Examen del estudiante <br></ul>
+                <ul>20% Participacion del estudiante <br></ul>
+            </label>
+            
+        </div>
+        
+
+        
+    
+    
+<h3></h3>
+      
+    </form></div>
+      
+</body>
+</html>

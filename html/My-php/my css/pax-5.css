@@ -1,0 +1,29 @@
+#t1,#t2,#t3,#productos .ver,
+#i1,#i2,#i3,#productos-1 .ver,
+#e1,#e2,#e3,#productos-2 .ver,
+#o1,#o2,#o3,#productos-3 .ver,
+#d1,#d2,#d3,#productos-4 .ver,
+#g1,#g2,#g3,#productos-5 .ver{
+    display: none;
+}
+
+@media (min-width:720px){
+    #t1,#t2,#t3,
+    #i1,#i2,#i3,
+    #e1,#e2,#e3,
+    #o1,#o2,#o3,
+    #d1,#d2,#d3,
+    #g1,#g2,#g3{
+        display: none;
+        margin-bottom: 30px;
+    }
+
+#productos .ver,
+#productos-1 .ver,
+#productos-2 .ver,
+#productos-3 .ver,
+#productos-4 .ver,
+#productos-5 .ver{
+    display: block;
+}
+}
