@@ -1,7 +1,7 @@
 addEventListener('load',inicializarEvento,false);
 
 function inicializarEvento(){
-    for(var f=1 ; f<=5; f++){
+    for(var f=1 ; f<=3; f++){
         var ob = document.getElementById('enlace'+f);
         ob.addEventListener('click', presionEnlace,false);
 
