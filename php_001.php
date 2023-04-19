@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="php_001.php" method="post">
+<form action="php_001.php"  method="post">
     <p>
         <label for="txt">De cuanto es tu deuda con el banco : </label>
         <input type="text" name="deuda" /><br/>
