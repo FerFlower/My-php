@@ -139,6 +139,18 @@ div#Datos{
     margin-left: 2%;
     
 }
+div#Datos1{
+    float: left;
+    border-radius: 32px;
+    padding: 1px 20px;
+    width: 350px;
+    height: 170px;
+    background-color: rgba(241, 238, 238, 0.295);
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+    
+}
 div#da{
     padding:0px 40px;
     width: 90px;

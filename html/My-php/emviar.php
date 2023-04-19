@@ -9,19 +9,20 @@ $Habi4= $_POST['h4'];
 $Exame= $_POST['ex'];
 $Parti= $_POST['pa'];
 $Proye= $_POST['pr'];
+$Promedio =round(($Habi1 +$Habi2+$Habi3+$Habi4)/4, 1);
+$Final =round(($Promedio*0.5)+($Exame*0.15)+($Proye*0.15)+($Parti*0.20), 1);
 
-$sql= "INSERT INTO notas (Id_Estudiante,Nombre,Ha1,Ha2,Ha3,Ha4,Exa,Pro,Par)VALUES (:Id,:No,:H1,:H2,:H3,:H4,:Ex,:Pa,:Pr)";
+$sql= "INSERT INTO notas (Id_Estudiante,Nombre,Ha1,Ha2,Ha3,Ha4,Exa,Pro,Par,Fin)VALUES (:Id,:No,:H1,:H2,:H3,:H4,:Ex,:Pa,:Pr,:Fi)";
 
 $Resultado = $conexion->prepare($sql);
-$Resultado->execute(array(':Id'=>$Id_es,':No'=>$Nombr,':H1'=>$Habi1,':H2'=>$Habi2,':H3'=>$Habi3,':H4'=>$Habi4,':Ex'=>$Exame,':Pa'=>$Parti,':Pr'=>$Proye));
+$Resultado->execute(array(':Id'=>$Id_es,':No'=>$Nombr,':H1'=>$Habi1,':H2'=>$Habi2,':H3'=>$Habi3,':H4'=>$Habi4,':Ex'=>$Exame,':Pa'=>$Parti,':Pr'=>$Proye,':Fi'=>$Final));
 
 
 $Resultado->closeCursor();
 
  
 
-    $Promedio = ($Habi1 +$Habi2+$Habi3+$Habi4)/4;
-    $Final = ($Promedio*0.5)+($Exame*0.15)+($Proye*0.15)+($Parti*0.20)
+    
   //$Resultado->closeCursor();
  // echo "Conexion Establecida";
   

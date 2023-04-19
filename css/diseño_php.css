@@ -55,7 +55,9 @@ background-image: linear-gradient(
     background-repeat: no-repeat;
     background-size: 101% 100%;
 }
-
+p#ee{
+    padding: 100% ;
+}
 h3{
     font-family: "1";
     color: rgb(189, 200, 255);
