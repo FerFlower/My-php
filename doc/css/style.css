@@ -39,7 +39,13 @@ body{
         0deg,
          rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
     }
+    a#enlace1,#enlace2,#enlace3{
+        font-size: 25px;
+        color: blanchedalmond;
+
+    }
     a#enlace1{
+        font-family: '1';
         float: left;
         text-align: center;
         width: 100px;
@@ -47,8 +53,12 @@ body{
         padding: 20px 20px;
         display: inline-block;
         margin-top: -16px;
+        background-image: linear-gradient(
+            0deg,
+             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
     }
     a#enlace2{
+        font-family: '1';
         float: left;
         text-align: center;
         width: 100px;
@@ -57,8 +67,12 @@ body{
         display: inline-block;
         margin-top: -16px;
         margin-left: 0px;
+        background-image: linear-gradient(
+            0deg,
+             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
     }
     a#enlace3{
+        font-family: '1';
         float: left;
         padding: 20px 20px;
         display: inline-block;
@@ -68,6 +82,9 @@ body{
         display: inline-block;
         margin-top: -16px;
         margin-left: 0px;
+        background-image: linear-gradient(
+            0deg,
+             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
     }
    
     div#menu_clientes{
