@@ -1,20 +1,21 @@
 <?php
-if($_POST){
-$Numero1= $_POST['1'];
-$Numero2= $_POST['2'];
-$Numero3= $_POST['3'];
-$Numero4= $_POST['4'];
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "matricula"; 
 
+include"../modelo/conexion.php";
 try {
 
-    $conexion = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
-    
-    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $conexion->exec("SET CHARACTER SET utf8");
+if(!empty($_POST["l"])){
+    if(!empty($_POST['1']) and !empty($_POST['2']) and  !empty($_POST['3']) and !empty($_POST['4']) ){
+
+        $Numero1= $_POST['1'];
+        $Numero2= $_POST['2'];
+        $Numero3= $_POST['3'];
+        $Numero4= $_POST['4'];
+
+       /* $Numero1= "login";
+        $Numero2= "login";
+        $Numero3= 23;
+        $Numero4= 23;*/
+
     $sql= "INSERT INTO productos (
         Nom_Productos ,
         Des_Productos ,
@@ -29,8 +30,12 @@ try {
     $Resultado->closeCursor();
     
     
+    $Numero1= null;
+    $Numero2= null;
+    $Numero3= null;
+    $Numero4= null;
    
-    
+    }}
     
     } catch ( PDOException $error) {
          echo$error->getCode();
@@ -41,17 +46,7 @@ try {
     
     die('Error: ' . $error->GetMessage());
     
-    }finally{
-    
-    
-    
-    
-    $conexion = null;
-    
-    
-    
-    
-    }}
+    }
 
 
 ?>

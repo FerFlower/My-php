@@ -1,0 +1,33 @@
+div#to{
+    float: left;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 0px;
+    height: 500px;
+    width: 500px;
+    padding: 20px 20px;
+    background-image: linear-gradient(
+            0deg,
+             rgba(255, 255, 255, 0.048),rgba(255, 255, 255, 0.329)) 
+            ;
+            border-radius: 50px;
+}
+h1#te{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+div#tablap{
+    float: right;
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: auto;
+    padding: 20px 20px;
+    height: 700px;
+    width: 1200px;
+    background-image: linear-gradient(
+            0deg,
+             rgba(255, 255, 255, 0.048),rgba(255, 255, 255, 0.329)) 
+            ;
+            border-radius: 50px;
+}
