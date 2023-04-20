@@ -12,7 +12,7 @@
 
 
 
-    <form action="Controlador/registrar.php" method="post">
+    <form action="Controlador/registrar.php" add="Bustrap.php"  method="post">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label"> Nombre</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="1">
@@ -34,40 +34,70 @@
       </form>
     </div>
 
+   <?php 
+if($_POST){
+   include "modelo/conexion.php";
    
+   try{$sql= "SELECT Id_Productos ,Nom_Productos ,Des_Productos ,Pre_Productos ,Cas_Productos FROM productos";
+   
+   $Resultado = $conexion->prepare($sql);
+   $Resultado->execute();
+   
+    while($registro=$Resultado->fetch(pdo::FETCH_ASSOC)){
+       
+        echo $registro['Nom_Productos'];
+        echo $registro['Des_Productos'];
+        echo $registro['Pre_Productos'];
+        echo $registro['Cas_Productos'];
+        
+     ?>
 
  <div id="tablap">
   <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripcion</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+         
+          
         </tr>
       </thead>
       <tbody class="table-group-divider">
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">
+            <?php echo $registro['Id_Productos'];?></th>
+          <td><?php  echo $registro['Nom_Productos']; ?></td>
+          <td><?php  echo $registro['Des_Productos']; ?></td>
+          <td><?php  echo $registro['Pre_Productos']; ?></td>
+          <td><?php  echo $registro['Cas_Productos']; ?></td>
+
         </tr>
       </tbody>
     </table>
+    <div id="boto">
+
+    </div>
   </div>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
+<?php
+}
+$Resultado->closeCursor();
+echo "Conexion Establecida";
+
+
+
+
+} catch ( PDOException $error) {
+
+echo "Conexion Erronea".$error;
+
+die('Error: ' . $error->GetMessage());
+
+}}
+?>

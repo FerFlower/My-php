@@ -22,8 +22,6 @@ function prosesarEvento(){
     var info = document.getElementById('informacion');
     if(conexion1.readystate == 4){
         info.innerHTML = conexion1.responseText;
-    }else if(conexion1.readystate == undefined){
-        info.innerHTML = conexion1.responseText;
     }else{
         info.innerHTML = 'Cargando...';
        
