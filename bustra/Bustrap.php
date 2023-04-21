@@ -91,10 +91,21 @@
 
         </tr>
       </tbody>
-    
-<?php
-    }
-}
+    <?php
+     }
+     $Resultado->closeCursor();
+     echo "Conexion Establecida";
+     
+     
+     
+     
+     } catch ( PDOException $error) {
+     
+     echo "Conexion Erronea".$error;
+     
+     die('Error: ' . $error->GetMessage());
+     
+     }
 ?>
 </table>
     <div id="boto">
