@@ -1,189 +1,238 @@
 @font-face {
-    font-family: "1";
-    src: url("doc/Quesha.ttf");
+  font-family: "1";
+  src: url("doc/Quesha.ttf");
 }
 @font-face {
-    font-family: "2";
-    src: url("doc/Natures.ttf");
+  font-family: "2";
+  src: url("doc/Natures.ttf");
 }
 @font-face {
-    font-family: "3";
-    src: url("doc/NoisyWalk.ttf");
+  font-family: "3";
+  src: url("doc/NoisyWalk.ttf");
 }
-body{
-    
-    display: block;
-    background-color: rgba(211, 183, 183, 0);
-   
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-   
-    background-image: linear-gradient(
-    0deg,
-     rgba(0, 0, 0, 0.699),rgba(3, 3, 3, 0)) 
-    ,url("img/rojo.jpg")  ;
-    background-attachment: fixed;
-    
-}
-::-webkit-scrollbar{
-    display:none;
-    }
-    header#de{
-        display: inline-block;
-        margin-top: -8px;
-        margin-left: -8px;
-        height:100px;
-        width: 100%;
-        border: 0px;
-        background-image: linear-gradient(
-        0deg,
-         rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
-    }
-    a#enlace1,#enlace2,#enlace3{
-        font-size: 25px;
-        color: blanchedalmond;
-        height: 90px;
+body {
+  display: block;
+  background-color: rgba(211, 183, 183, 0);
 
-    }
-    a#enlace1{
-        font-family: '1';
-        float: left;
-        text-align: center;
-        width: 120px;
-        
-        padding: 20px 20px;
-        display: inline-block;
-        margin-top: 0px;
-        background-image: linear-gradient(
-            0deg,
-             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
-    }
-    a#enlace2{
-        font-family: '1';
-        float: left;
-        text-align: center;
-        width: 140px;
-        
-        padding: 20px 20px;
-        display: inline-block;
-        margin-top: -16px;
-        margin-left: 0px;
-        background-image: linear-gradient(
-            0deg,
-             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
-    }
-    a#enlace3{
-        font-family: '1';
-        float: left;
-        padding: 20px 20px;
-        display: inline-block;
-        width: 140px;
-     
-        padding: 20px 20px;
-        display: inline-block;
-        margin-top: -16px;
-        margin-left: 0px;
-        background-image: linear-gradient(
-            0deg,
-             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)) ;
-    }
-   
-    div#menu_clientes{
-        float: right;
-        margin-top: 20px;
-        display: inline-block;
-        background-image: linear-gradient(
-        0deg,
-         rgba(233, 230, 230, 0),rgba(255, 255, 255, 0)) ;
-        width: 400px;
-        height: 60px;
-    }
-    div#logo,#logo2{
-        display: inline-block;
-        float: left;
-        margin-top: 8px;
-        margin-left: 20px;
-        height: 80px;
-        width: 60px;
-        background-image: linear-gradient(
-            0deg,
-             rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)) 
-            ,url("img/logo.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-    }
-    div#logo2{
-        margin-left: -4px; 
-    }
-    div#Lor{
-        float: left;
-        margin: 10px 10px;
-        height: 35px;
-        width: 160px;
-       
-    }
-    div#login,#register,#regi{
-        height: 340px;
-        width: 500px;  
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 20px;
-    background-image: linear-gradient(
-            0deg,
-             rgba(255, 255, 255, 0.048),rgba(255, 255, 255, 0.329)) 
-            ;
-            border-radius: 50px;
-    }
-    div#register{
-        height: 500px; 
-    }div#regi{
-        height: 500px; 
-        width: 1500px;
-    }
-    div#to1,#to2{
-        display: inline-block;
-        margin-left: 30px;
-        width: 45%;
-    }div#to1{
-        margin-left: 5px;
-    }
-   
-    div#informacion{
-       margin-left: auto;
-       margin-right: auto;
-       height: 100%;
-       width: 100%;
-        display: inline-block;   
-        margin-top: 10px;
-    
-    }
-    h1#de{
-        font-family: '2';
-        margin-top: 20px;
-        font-size: 41px;
-    }
-    h1#d{
-        padding: 10px 20px;
-        color: brown;
-        text-align: center;
-        font-family: '3';
-        margin-top: 20px;
-        font-size: 35px;
-    }
-    #red{
-        text-align: center;
-    }
-    #espas{
-        width: 500px;
-    }
-  a:hover#enlace1,a:hover#enlace2,a:hover#enlace3 {
-        color: rgb(145, 152, 250);
-        background-image: linear-gradient(
-            0deg,
-             rgba(26, 14, 129, 0),rgb(0, 6, 58)) ;
-             
-    }
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(3, 3, 3)),
+    url("img/rojo.jpg");
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+header#de {
+  display: inline-block;
+  margin-top: -8px;
+  margin-left: -8px;
+  height: 100px;
+  width: 100%;
+  border: 0px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.938)
+  );
+}
+a#enlace1,
+#enlace2,
+#enlace3 {
+  font-size: 25px;
+  color: blanchedalmond;
+  height: 90px;
+}
+a#enlace1 {
+  font-family: "1";
+  float: left;
+  text-align: center;
+  width: 120px;
+
+  padding: 20px 20px;
+  display: inline-block;
+  margin-top: 0px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.938)
+  );
+}
+a#enlace2 {
+  font-family: "1";
+  float: left;
+  text-align: center;
+  width: 140px;
+
+  padding: 20px 20px;
+  display: inline-block;
+  margin-top: -16px;
+  margin-left: 0px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.938)
+  );
+}
+a#enlace3 {
+  font-family: "1";
+  float: left;
+  padding: 20px 20px;
+  display: inline-block;
+  width: 140px;
+
+  padding: 20px 20px;
+  display: inline-block;
+  margin-top: -16px;
+  margin-left: 0px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.938)
+  );
+}
+
+div#menu_clientes {
+  float: right;
+  margin-top: 20px;
+  display: inline-block;
+  background-image: linear-gradient(
+    0deg,
+    rgba(233, 230, 230, 0),
+    rgba(255, 255, 255, 0)
+  );
+  width: 400px;
+  height: 60px;
+}
+div#logo,
+#logo2 {
+  display: inline-block;
+  float: left;
+  margin-top: 8px;
+  margin-left: 20px;
+  height: 80px;
+  width: 60px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("img/logo1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div#logo2 {
+  margin-left: -4px;
+}
+div#Lor {
+  float: left;
+  margin: 10px 10px;
+  height: 35px;
+  width: 160px;
+}
+div#login,
+#register,
+#regi {
+  height: 340px;
+  width: 500px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.048),
+    rgba(255, 255, 255, 0.329)
+  );
+  border-radius: 50px;
+}
+div#register {
+  height: 500px;
+}
+div#regi {
+  height: 500px;
+  width: 1500px;
+}
+div#to1,
+#to2 {
+  display: inline-block;
+  margin-left: 30px;
+  width: 45%;
+}
+div#to1 {
+  margin-left: 5px;
+}
+
+div#informacion {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+}
+h1#de {
+  color: white;
+
+  font-family: "2";
+  margin-top: 20px;
+  font-size: 41px;
+}
+h1#d {
+  padding: 10px 20px;
+  color: rgb(241, 0, 0);
+  text-align: center;
+  font-family: "3";
+  margin-top: 20px;
+  font-size: 35px;
+}
+#red {
+  text-align: center;
+}
+#espas {
+  width: 500px;
+}
+a:hover#enlace1,
+a:hover#enlace2,
+a:hover#enlace3 {
+  color: rgba(252, 206, 206, 0.719);
+  background-image: linear-gradient(0deg, rgba(26, 14, 129, 0), rgb(94, 0, 0));
+}
+div#roto {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url("img/roto.png");
+}
+div#roto2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url("img/roto2.png");
+}
+div#roto3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url("img/roto3.png");
+}
+div#roto,
+#roto2,
+#roto3 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div#toroto {
+  height: 110px;
+}
