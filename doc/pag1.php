@@ -70,6 +70,36 @@ if ($_REQUEST['cod'] == 3) {
 
 
     ?>
+    <h1 id="d">Lista de registros</h1>
+            <div id="regi">
+          
+
+
+              <table class="table table-borderless" id="red">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" id="espas">Correo</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+
+                  </tr>
+                </thead>
+               <!--De aqui copiar--> <tbody>
+                  <tr>
+                    <th scope="row">
+                           1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+               <!--Asta aqui-->   
+                </tbody>
+              </table>
+
 
 
         <?php

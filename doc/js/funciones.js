@@ -27,7 +27,7 @@ function prosesarEvento(){
         info.innerHTML = conexion1.responseText;
     }else{
         info.innerHTML = 'Cargando...';
-
+        info.innerHTML = conexion1.responseText;
 
     }
 }
