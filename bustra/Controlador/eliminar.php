@@ -1,6 +1,6 @@
 <?php
 
-include "../modelo/conexion.php";
+//include "../modelo/conexion.php";
 try {
 
     if (!empty($_POST["l"])) {
@@ -15,7 +15,7 @@ try {
         $Resultado = $conexion->prepare($sql);
         $Resultado->execute(array(":05i" => $Numero5));
         $Resultado->closeCursor();
-        echo '<div class="alert alert_success">Producto Eliminado correctamente </div>';
+        echo '<div class="alert alert-success">Producto Eliminado correctamente </div>';
 
         // $Numero1= null;
         // $Numero2= null;
@@ -23,7 +23,7 @@ try {
         // $Numero4= null;
 
     } else {
-        echo '<div class="alert alert_warning">Algunos datos no an sido ingresados</div>';
+        echo '<div class="alert alert-warning">Algunos datos no an sido ingresados</div>';
     }
 } catch (PDOException $error) {
     echo $error->getCode();

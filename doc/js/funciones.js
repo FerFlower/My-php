@@ -1,7 +1,8 @@
+
 addEventListener('load',inicializarEvento,false);
 
 function inicializarEvento(){
-    for(var f=1 ; f<=3; f++){
+    for(var f=1 ; f<=5; f++){
         var ob = document.getElementById('enlace'+f);
         ob.addEventListener('click', presionEnlace,false);
 
@@ -22,9 +23,11 @@ function prosesarEvento(){
     var info = document.getElementById('informacion');
     if(conexion1.readystate == 4){
         info.innerHTML = conexion1.responseText;
+    }else if(conexion1.readystate == undefined){
+        info.innerHTML = conexion1.responseText;
     }else{
         info.innerHTML = 'Cargando...';
-       
+
 
     }
 }

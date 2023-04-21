@@ -1,6 +1,6 @@
 <?php
 
-include"../modelo/conexion.php";
+//include"../modelo/conexion.php";
 try {
 
 if(!empty($_POST["l"])){
@@ -25,8 +25,8 @@ if(!empty($_POST["l"])){
    
    $Resultado = $conexion->prepare($sql);
    $Resultado->execute(array(":01i"=>$Numero1,":02i"=>$Numero2,":03i"=>$Numero3,":04i"=>$Numero4));
-
-   echo "Regisro embiado";
+   echo '<div class="alert alert-success">Producto Registrado correctamente </div>';
+  
     $Resultado->closeCursor();
     
     
@@ -35,7 +35,9 @@ if(!empty($_POST["l"])){
     $Numero3= null;
     $Numero4= null;
    
-    }}
+    }}else{
+        echo '<div class="alert alert-warning">Algunos datos no an sido ingresados</div>';
+    }
     
     } catch ( PDOException $error) {
          echo$error->getCode();

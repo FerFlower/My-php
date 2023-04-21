@@ -37,7 +37,7 @@ try {
             $Resultado->errorInfo();
             echo "Regisro modificado";
             $Resultado->closeCursor();
-            echo '<div class="alert alert_success">Producto Registrado correctamente </div>';
+            echo '<div class="alert alert-success">Producto Registrado correctamente </div>';
 
             // $Numero1= null;
             // $Numero2= null;
@@ -45,7 +45,7 @@ try {
             // $Numero4= null;
 
         } else {
-            echo '<div class="alert alert_warning">Algunos datos no an sido ingresados</div>';
+            echo '<div class="alert alert-warning">Algunos datos no an sido ingresados</div>';
         }
     }
 
