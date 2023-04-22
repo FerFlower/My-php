@@ -4,40 +4,37 @@ header('Content-Type: text/html; charset=utf-8');
 
 if ($_REQUEST['cod'] == 1) {
   ?>
-       
+  
          <h1 id="d">Crear cuenta</h1>
          <div id="toroto">
         <div id="roto2"></div>
         </div>
               <div id="register">
-             <form ><br>
+             <form method="post" onsubmit="return false;"><br>
               <div class="mb-3" id="to1">
                   <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="1">
+                  <input type="text" class="form-control" id="Nom"  name="Nom" >
                   <div id="emailHelp" class="form-text">Tu Nombre deve ser real</div>
                 </div>
                 <div class="mb-3" id="to2">
                   <label for="exampleInputEmail1" class="form-label">DNI</label>
-                  <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="2">
+                  <input type="number" class="form-control" id="Dni"  name="Dni" >
                   <div id="emailHelp" class="form-text">Maximo 8 digitos</div>
                 </div><br><br>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Ingresa tu correo</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="3">
+              <input type="email" class="form-control" id="Cor"  name="Cor" >
               <div id="emailHelp" class="form-text">Tu correo debe contener los sigonos "@"</div>
             </div><br>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Tu contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" name="4">
+              <input type="password" class="form-control" id="Con"  name="Con" >
             </div>
             <br>
-            <button type="submit" class="btn btn-primary" name="l">Registrar</button>
-          
+            <button type="submit" class="btn btn-primary" name="l" onclick="enviarDatos2()">Registrar</button>
+           
           </form>
-          <?php
-//include"../modelo/conexion.php";
-//include"../modelo/conexion.php";
-          ?>
+          
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
           </div>
     
@@ -56,18 +53,18 @@ if ($_REQUEST['cod'] == 2) {
         <div id="roto"></div>
         </div>
   <div id="login">
-             <form ><br>
+             <form onsubmit="return false;" method="post"><br>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Ingresa tu correo</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="idCorreo" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Tu correo debe contener los sigonos "@"</div>
             </div><br>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Tu contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" id="IdContraseña">
             </div>
             <br>
-            <button type="submit" class="btn btn-primary">Iniciar</button>
+            <button type="submit" class="btn btn-primary"onclick="enviarDatos1()">Iniciar</button>
           
           </form>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

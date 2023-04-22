@@ -1,4 +1,7 @@
 
+
+
+//____________________________________________________________________________________________ a
 addEventListener('load',inicializarEvento,false);
 
 function inicializarEvento(){

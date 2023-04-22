@@ -3,13 +3,13 @@
 //include "../modelo/conexion.php";
 try {
 
-    if (!empty($_POST["l"])) {
+
 
         /*
         Numero5 es ID del producto
         */
-
-        $Numero5 = $_POST['5'];
+if(!empty($_GET["id"])){
+        $Numero5 = $_GET['id'];
         $sql = "DELETE FROM  productos where Id_Productos = :05i";
 
         $Resultado = $conexion->prepare($sql);
@@ -22,9 +22,7 @@ try {
         // $Numero3= null;
         // $Numero4= null;
 
-    } else {
-        echo '<div class="alert alert-warning">Algunos datos no an sido ingresados</div>';
-    }
+}
 } catch (PDOException $error) {
     echo $error->getCode();
     echo '<div class="alert alert_warning">Ubo un error al elimnar</div>';

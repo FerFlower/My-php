@@ -26,11 +26,11 @@
   <h1 style=" text-align: center;padding: 30px;">Registro de Producto</h1>
   <?php
   include "modelo/conexion.php";
-  include "controlador/eliminar.php";
+  include "Controlador/eliminar.php";
   ?>
   <?php
   include "modelo/conexion.php";
-  include "controlador/registrar.php";
+  include "Controlador/registrar.php";
   ?>
   <div id="to">
 
@@ -70,7 +70,7 @@
           <th scope="col">Precio</th>
           <th scope="col">Cantidad</th>
           <th scope="col"></th>
-          <th scope="col"></th>
+         
         </tr>
       </thead>
 
@@ -79,7 +79,7 @@
 
    include "modelo/conexion.php";
    
-   try{$sql= "SELECT Id_Productos ,Nom_Productos ,Des_Productos ,Pre_Productos ,Cas_Productos FROM productos";
+   $sql= "SELECT Id_Productos ,Nom_Productos ,Des_Productos ,Pre_Productos ,Cas_Productos FROM productos";
    
    $Resultado = $conexion->prepare($sql);
    $Resultado->execute();
@@ -108,28 +108,17 @@
             <?php  echo $registro['Cas_Productos']; ?>
           </td>
           <td>
-            <a href="Modifcar.php?id=<?= $registro['Id_Productos']?>" class="btn btn-small btn-warning"><i
-                class="fa-solid fa-pen-to-square"></i></a>
-            <a href=""></a>
+            <a href="Modifcar.php?id=<?= $registro['Id_Productos']?>" class="btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+        
+            <a onclick="return eliminar()" href="Bustrap.php?id=<?=$registro['Id_Productos']?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
           </td>
 
         </tr>
+
       </tbody>
       <?php
      }
-     $Resultado->closeCursor();
-     echo "Conexion Establecida";
-     
-     
-     
-     
-     } catch ( PDOException $error) {
-     
-     echo "Conexion Erronea".$error;
-     
-     die('Error: ' . $error->GetMessage());
-     
-     }
+    
 ?>
     </table>
     <div id="boto">

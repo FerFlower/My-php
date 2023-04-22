@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prueba de JavaScript</title>
+</head>
+<body>
+  <input type="text" id="Nom1">
+  <input type="text" id="Nom2">
+  <input type="text" id="Nom3">
+  <input type="text" id="Nom4">
+  <button onclick="verificarVariables()">Verificar Variables</button>
+  <script>
+    function verificarVariables() {
+      var Nom1 = document.getElementById("Nom1").value;
+      var Nom2 = document.getElementById("Nom2").value;
+      var Nom3 = document.getElementById("Nom3").value;
+      var Nom4 = document.getElementById("Nom4").value;
+
+      if (Nom1 !== "" && Nom2 !== "" && Nom3 !== "" && Nom4 !== "") {
+        alert("Todas las variables tienen valores definidos");
+      } else {
+        alert("Al menos una de las variables es una cadena vacía o undefined");
+      }
+    }
+  </script>
+</body>
+</html>

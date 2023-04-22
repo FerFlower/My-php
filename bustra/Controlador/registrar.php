@@ -35,9 +35,9 @@ if(!empty($_POST["l"])){
     $Numero3= null;
     $Numero4= null;
    
-    }}else{
+    }else{
         echo '<div class="alert alert-warning">Algunos datos no an sido ingresados</div>';
-    }
+    }}
     
     } catch ( PDOException $error) {
          echo$error->getCode();
