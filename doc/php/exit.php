@@ -10,13 +10,15 @@
    
     <title>Document</title>
 </head>
-<body id="ig"><!--
+<body id="ig">
 <script>
     window.onload = function() {setTimeout(function() {document.getElementById('miDiv').style.display = 'none';}, 5000); }
   </script>
     <?php
     $nombre = $_GET['wwt:1'];
     $Dni = $_GET['wwt:2'];
+    $Correo = $_GET['wwt:3'];
+
     $Aler = $_GET['wwt:ñ'];
 
     if ($Aler == 12) {
@@ -25,7 +27,7 @@
       echo ' <div id="miDiv" class="alert alert-success">Producto Registrado correctamente </div>';
     }
 
-    ?>-->
+    ?>
      <form  method="post"> 
    <div>
     <h1 id="tiflex">
@@ -34,15 +36,15 @@
    </h1>
    </div>
    <div id="Data">
-    <ul id="subData">Biembenido a casa ---- </ul>
+    <ul id="subData">Biembenido a casa <?php echo $nombre ;?> </ul>
    </div>
    <div id="table">
     <ul id="Data1">
       Recueda que aca tenemos tus datos bien guardados
     </ul>
-    <ul id="Data2">Tu Nombre es </ul>
-    <ul id="Data2">Tu correo es</ul>
-    <ul id="Data2">Tu DNi es </ul>
+    <ul id="Data2">Tu Nombre es : <?php echo $nombre ;?></ul>
+    <ul id="Data2">Tu correo es : <?php echo $Correo ;?></ul>
+    <ul id="Data2">Tu DNi es : <?php echo $Dni ;?></ul>
     <input type="submit" value="Serrar Sesion" class="btn btn-primary" name="l" id="tr" />  
    
     
@@ -51,7 +53,7 @@
 
       
     </form>
-  <!--<?php
+  <?php
     if (!empty($_POST["l"])) {
       $datos = array('wwt:ñ' => 201);
       sleep(1);
@@ -59,6 +61,6 @@
       $nueva_url = "../pag.php?&";
       header('Location: ' . $nueva_url . $query_string);
     }
-    ?>-->
+    ?>
 </body>
 </html>

@@ -25,4 +25,11 @@
       confirm("Te falta ingresar datosdd")
   
     }}
+    function eliminar() {
+
+      var respuesta = confirm("Estas seguro que deseas eliminar?");
+
+      return respuesta;
+
+    }
    

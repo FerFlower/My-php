@@ -119,6 +119,8 @@ if ($_REQUEST['cod'] == 3) {
                           <td><?php echo $registro['Contra']; ?></td>
                           <td><?php echo $registro['Nombr']; ?></td>
                           <td><?php echo $registro['Dni']; ?></td>
+                          <td> <a onclick="return eliminar()" href="pag.php?id=<?=$registro['Correo']?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
+                          </td>
 
                         </tr>
                      <!--Asta aqui-->   

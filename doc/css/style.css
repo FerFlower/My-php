@@ -239,7 +239,7 @@ div#roto3 {
 }
 div#roto,
 #roto2,
-#roto3 {
+#roto3,#roto4 {
   margin-left: auto;
   margin-right: auto;
   height: 100px;
@@ -318,6 +318,22 @@ div#table{
       --bs-btn-border-color: none;
     border: 0cap;
     }
-      
+    div#informacion{
+      color: antiquewhite;
+      font-family: "3";
+      padding: 200px;
+      text-align: center;
 
+    }
+div#roto4{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0)
+  ),
+  url("img/roto4.png");
+}
     
+#roto4{
+  padding: 200px;
+}
