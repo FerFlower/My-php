@@ -3,12 +3,20 @@
   src: url("doc/Quesha.ttf");
 }
 @font-face {
+  font-family: "4";
+  src: url("doc/Milo.ttf");
+}
+@font-face {
   font-family: "2";
   src: url("doc/Natures.ttf");
 }
 @font-face {
   font-family: "3";
   src: url("doc/NoisyWalk.ttf");
+}
+@font-face {
+  font-family: "re";
+  src: url("doc/retor.ttf");
 }
 body {
   display: block;
@@ -36,6 +44,22 @@ body {
 
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)),
     url("img/rojo.jpg");
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body#index {
+  display: block;
+  background-color: rgba(211, 183, 183, 0);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(2, 0, 0, 0)),
+    url("img/floro.jpg");
   background-attachment: fixed;
 }
 ::-webkit-scrollbar {
@@ -239,7 +263,7 @@ div#roto3 {
 }
 div#roto,
 #roto2,
-#roto3,#roto4 {
+#roto3,#roto4,#roto5 {
   margin-left: auto;
   margin-right: auto;
   height: 100px;
@@ -318,10 +342,21 @@ div#table{
       --bs-btn-border-color: none;
     border: 0cap;
     }
+    h1#index{
+      padding: 40px;
+font-family: "3";
+    }
     div#informacion{
       color: antiquewhite;
+      font-family: "re";
+      padding: 10px;
+      text-align: center;
+
+    }
+    div#pas{
+      color: antiquewhite;
       font-family: "3";
-      padding: 200px;
+      padding: 40px;
       text-align: center;
 
     }
@@ -332,6 +367,50 @@ div#roto4{
     rgba(255, 255, 255, 0)
   ),
   url("img/roto4.png");
+}
+div#remo{
+  margin-top: 300px;
+}
+ul#remo{
+  font-size: 20px;
+  font-family: "1";
+  color: rgba(250, 235, 215, 0.411);
+}
+    
+#roto4{
+  padding: 200px;
+}
+div#informacio{
+  color: rgba(123, 189, 250, 0.521);
+  font-family: "4";
+  padding: 50px;
+  text-align: left;
+  font-size: 23px;
+
+}input#tr2{
+  margin-left: 50px;
+  margin-top: 5px;
+  float: left;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0.432)
+  );
+  font-size: 16px;
+  padding: 10px 40px;
+  --bs-btn-bg:none;
+  --bs-btn-border-color: none;
+border: 0cap;
+}div#roto5{
+  margin-top: 30px;
+  margin-left: 40px;
+  float: left;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.13),
+    rgba(0, 0, 0, 0.151)
+  ),
+  url("img/roto5.png");
 }
     
 #roto4{

@@ -42,6 +42,7 @@ include "php/filtro.php" ;
 
 
     <div id="informacion">
+      <div id="pas"></div>
       <h1 id="index"> Bimbenidos a UserLogin</h1>
       
       <div id="toroto">
