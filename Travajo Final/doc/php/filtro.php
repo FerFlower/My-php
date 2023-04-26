@@ -45,7 +45,7 @@ if($Numero3==$cor){
         'wwt:3' =>$Correo,
         'wwt:ñ' => 12
     );
-    sleep(5);
+    sleep(2);
     $query_string = http_build_query($datos);
     $nueva_url = "php/exit.php?&";
     header('Location: ' . $nueva_url . $query_string);

@@ -27,7 +27,7 @@ try {
         'wwt:4' => $Numero4,
         'wwt:ñ' => 70
     );
-    sleep(5);
+    sleep(2);
     $query_string = http_build_query($datos);
     $nueva_url = "php/exit.php?";
     header('Location: ' . $nueva_url . $query_string);
