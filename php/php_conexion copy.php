@@ -23,6 +23,7 @@ try {
         "<br> Descripcion producto : ".$registro['Des_Productos'].
         "<br> Precio Productos : ".$registro['Pre_Productos'].
         "<br> Cantidad Productos : ".$registro['Cas_Productos']."<br><br>
+        
         ";
      }
     $Resultado->closeCursor();

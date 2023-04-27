@@ -18,8 +18,8 @@ class Cliente extends Conexion{
             return $idInset;
         }catch (Exception $error){
             echo "Conexion Erronea".$error;
-            die('Error: '.$error->GetMenssage());
             echo "Linea del Error: ".$error->getLine();
+            die('Error: '.$error->GetMenssage());
         }
     }
 }
