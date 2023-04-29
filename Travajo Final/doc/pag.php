@@ -45,7 +45,7 @@ include "php/filtro.php" ;
 
     <div id="informacion">
       <div id="pas"></div>
-      <h1 id="index"> Bimbenidos a UserLogin</h1>
+      <h1 id="index"> Biembenidos a UserLogin</h1>
       
       <div id="toroto">
         <div id="roto4"></div>
