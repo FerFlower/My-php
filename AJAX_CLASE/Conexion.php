@@ -13,7 +13,7 @@ class Conexion{
         try {
             $this->conect = new PDO($connectionString,$this->user,$this->pass);
             $this->conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Conectada";
+          //  echo "Conectada";
         } catch (PDOException $error) {
          //   echo "Conexion Erronea".$error;
           //  die('Error: ' . $error->GetMessage());
